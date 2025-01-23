@@ -1,0 +1,77 @@
+.section-hero-banner {
+    background-image: url(../images/img-photo-jonnathan.png);
+}
+
+.content-image-hero {
+    background-image: url(../images/img-photo-jonnathan.png);
+    background-position: center;
+    height: 100%;
+    display: none;
+}
+
+.content-text-hero,
+.content-text-section,
+.content-text-cta {
+    gap: 24px;
+}
+
+.content-cards-services {
+    margin-top: 48px;
+    gap: 20px;
+}
+
+.card-services {
+    background-color: var(--accent-color);
+    padding: 32px 20px;
+    gap: 24px;
+}
+
+.icon-services {
+    height: 64px;
+    width: 64px;
+}
+.body-card {
+    gap: 16px;
+}
+
+.section-testimonials {
+    gap: 40px;
+}
+
+.card-testimonials {
+    background-color: var(--accent-color);
+    padding: 32px;
+    gap: 16px;
+}
+
+.name-testimonials {
+    color: var(--main-color);
+}
+
+.icon-testimonials {
+    width: 80px;
+    height: 51px;
+}
+
+.section-call-to-action {
+    background-image: url(/images/img-background-cta.png);
+}
+
+.content-signature {
+    width: 196px;
+    height: 61px;
+}
+
+.section-details-me {
+    padding-top: 0;
+}
+
+.list-social-contact {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    padding: 0;
+}
+
+
