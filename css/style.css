@@ -180,6 +180,7 @@ button {
     letter-spacing: 2px;
     text-transform: uppercase !important;
     border-radius: 0%;
+    width: 100%;
 }
 
 .btn-primary {

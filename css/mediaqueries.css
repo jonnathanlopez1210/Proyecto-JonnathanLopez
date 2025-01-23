@@ -38,6 +38,44 @@
     .content-text-hero {
         padding: 0 64px 0 32px;
     }
+
+    .centered-cta {
+        width: 60%;
+        
+    }
+
+    .content-button-cta {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    
+    footer.display-column {
+        flex-direction: row ;
+        justify-content: center;
+    }
+
+    .content-description-company {
+        text-align: left;
+        max-width: 338px;
+        margin-right: 48px;
+        width: 30%;
+    }
+
+    .image-logo-footer {
+        margin: 0;
+    }
+
+    .content-contact-info h5.style-h5.text-center,
+    .content-other-info h5.style-h5,
+    .content-follow h5.style-h5 {
+        text-align: left !important;
+    }
+
+    .content-contact-info .list-footer,
+    .content-other-info .list-footer {
+        padding-left: 0;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -57,41 +95,38 @@
         margin-top: 0; 
     }
 
-    .centered-cta {
-        width: 40%;
-        
-    }
-
     .content-text-cta {
         margin: 0 40px;
     }
 
-    footer {
-        flex-direction: row !important;
-        justify-content: center;
+    .section-gallery {
+        height: 1461px;
+        padding: 0 64px;
     }
 
-    .content-description-company {
-        text-align: left;
-        max-width: 338px;
-        margin-right: 48px;
-        width: 30%;
+    .content-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        height: 100%;
     }
 
-    .image-logo-footer {
-        margin: 0;
+    .item-gallery-two,
+    .item-gallery-eight {
+        grid-row: span 2;
     }
 
-    .content-contact-info h5.style-h5,
-    .content-other-info h5.style-h5,
-    .content-follow-info h5.style-h5 {
-        text-align: left !important;
-    }
-
-    .content-contact-info .list-footer,
-    .content-other-info .list-footer {
-        padding-left: 0;
+    .item-gallery-four,
+    .item-gallery-seven {
+        grid-row: span 3;
     }
 
   
+}
+
+@media only screen and (min-width: 1200px) {
+    .content-button-hero {
+        width: 30%;
+    }
 }

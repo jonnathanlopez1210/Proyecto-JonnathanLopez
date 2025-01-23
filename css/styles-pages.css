@@ -30,8 +30,20 @@
     height: 64px;
     width: 64px;
 }
+
 .body-card {
     gap: 16px;
+}
+
+.content-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-gallery div img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .section-testimonials {
@@ -56,6 +68,12 @@
 .section-call-to-action {
     background-image: url(/images/img-background-cta.png);
 }
+
+.content-button-cta {
+    width: 100%;
+}
+
+/*About me*/
 
 .content-signature {
     width: 196px;
