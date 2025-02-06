@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-jonnathanlopez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnathanlopez1210/Proyecto-JonnathanLopez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jonnathanlopez1210/Proyecto-JonnathanLopez/issues"
+  },
+  "homepage": "https://github.com/jonnathanlopez1210/Proyecto-JonnathanLopez#readme",
+
+  "scripts": {
+    "sass": "sass --watch css/styles.scss:css/main.css"
+  }
+}
+

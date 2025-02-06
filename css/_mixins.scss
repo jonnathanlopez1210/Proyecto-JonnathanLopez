@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+@mixin heading-style($size) {
+    font-size: $size;
+    font-weight: bold;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: $secondary-color;
+}
+
+@mixin gap-size($size) {
+    gap: $size;
+    display: flex;
+    flex-direction: column;
+}

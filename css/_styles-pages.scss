@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .section-hero-banner {
     background-image: url(../images/img-photo-jonnathan.png);
 }
@@ -21,14 +23,22 @@
 }
 
 .card-services {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     padding: 32px 20px;
     gap: 24px;
 }
 
-.icon-services {
-    height: 64px;
-    width: 64px;
+.icon {
+
+    &-services {
+        height: 64px;
+        width: 64px;
+    }
+
+    &-testimonials {
+        width: 80px;
+        height: 51px;
+    }
 }
 
 .body-card {
@@ -39,11 +49,15 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
 
-.content-gallery div img {
-    height: 100%;
-    object-fit: cover;
+    div {
+        
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
 }
 
 .section-testimonials {
@@ -51,18 +65,13 @@
 }
 
 .card-testimonials {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     padding: 32px;
     gap: 16px;
 }
 
 .name-testimonials {
-    color: var(--main-color);
-}
-
-.icon-testimonials {
-    width: 80px;
-    height: 51px;
+    color: $main-color;
 }
 
 .section-call-to-action {
@@ -73,7 +82,7 @@
     width: 100%;
 }
 
-/*About me*/
+//ABOUT ME 
 
 .content-signature {
     width: 196px;
@@ -91,5 +100,3 @@
     gap: 12px;
     padding: 0;
 }
-
-
