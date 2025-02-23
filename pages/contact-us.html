@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Fotografo Jonnathan Lopez</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,8 +41,8 @@
 
     <!-- seccion 1 hero -->
     <section class="section-hero-contact-us"> 
-        <div class="content-text-hero display-column">
-            <div class="content-group-title display-column">
+        <div class="content-text-hero ">
+            <div class="content-group-title ">
                 <h6 class="style-h6 text-center ">Contact Us</h6>
                 <h1 class="style-h1 text-center ">I’d <span>love to hear</span> what you think</h1>
             </div>
@@ -51,21 +51,21 @@
 
     <!-- seccion services -->
     <section class="section-details-me">
-        <div class="">
-            <div class="">
+        <div class="content-group-details">
+            <div class="group-detail">
                 <h4 class="style-h4">Email <span>me</span></h4>
                 <p class="style-p">jonnathanlopez1210@gmail.com</p>
             </div>
-            <div>
+            <div class="group-detail">
                 <h4 class="style-h4">Phone <span>me</span></h4>
                 <p class="style-p">+57 302 245 56 96</p>
             </div>
-            <dir>
+            <div class="group-detail">
                 <h4 class="style-h4">Visit <span>me</span></h4>
                 <p class="style-p">Villa Alsacia - Bogotá, Colombia</p>
-            </dir>
+            </div>
             <br>
-            <div class="content-follow display-column">
+            <div class="content-follow ">
                 <ul class="list-social-contact">
                     <li>
                         <a href="">
@@ -90,9 +90,9 @@
                 </ul>
             </div>
         </div>
-        <div>
-            <form class="content-form-full display-column">
-                <div class="double-form display-column">
+        <div class="content-form-contact">
+            <form class="form-full">
+                <div class="double-form">
                     <div class="group-form">
                         <label for="name" class="">First name</label>
                         <input type="text" name="name" id="name" placeholder="Placeholder">
@@ -104,12 +104,12 @@
                     </div>
                 </div>
 
-                <div class="double-form display-column">
+                <div class="double-form">
                     <div class="group-form">
                         <label for="email" class="">Email</label>
                         <input type="email" name="email" id="email" placeholder="Placeholder">
                     </div>
-                    <div>                        
+                    <div class="group-form">                        
                         <label for="phone-number" class="">Phone number</label>
                         <input type="phone" name="phone-number" id="phone-number" placeholder="Placeholder">
                     </div>
@@ -120,13 +120,13 @@
                     <input type="text" name="service" id="service" placeholder="Placeholder">
                 </div>
 
-               <div class="double-form display-column">
+               <div class="double-form">
                     <div class="group-form">
                         <label for="location">Location</label>
                         <input type="text" name="location" id="location" placeholder="Placeholder">
                     </div>
 
-                    <div class="gruop-form">
+                    <div class="group-form">
                         <label for="date">Date</label>
                         <input type="date" name="date" id="date">
                     </div>
@@ -141,22 +141,23 @@
                     <label for="details">Details</label>
                     <textarea name="details" id="details" cols="50" rows="4"></textarea>
                 </div>
-
-                <button class="btn-primary btn--xl" type="submit"> SEND MESSAGE</button>
+                <div class="content-buttom-form">
+                    <button class="btn-primary btn--xl" type="submit"> SEND MESSAGE</button>
+                </div>
             </form>
         </div>
 
     </section>
 
     <!-- section-testimonials -->
-    <section class="section-testimonials display-column ">
+    <section class="section-testimonials">
         <div class="content-text-section">
             <h2 class="text-center style-h2 ">What <span>My Clients</span> Say</h2>
         </div>
         <swiper-container class="mySwiper" navigation="false" pagination="false" keyboard="true" mousewheel="true"
         css-mode="true">
             <swiper-slide>
-                <div class="card-testimonials display-column ">
+                <div class="card-testimonials  ">
                     <img  class="icon-testimonials" src="/images/icon-quote-testimonials.png">
                     <p class="style-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat optio ea eligendi omnis possimus expedita in dolore recusandae delectus explicabo nemo, est earum magni illo alias, facilis provident ex natus.</p>
                     <div class="footer-card">
@@ -166,7 +167,7 @@
                 </div>
             </swiper-slide>
             <swiper-slide>
-                <div class="card-testimonials display-column ">
+                <div class="card-testimonials  ">
                     <img  class="icon-testimonials" src="/images/icon-quote-testimonials.png">
                     <p class="style-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat optio ea eligendi omnis possimus expedita in dolore recusandae delectus explicabo nemo, est earum magni illo alias, facilis provident ex natus.</p>
                     <div class="footer-card">
@@ -176,7 +177,7 @@
                 </div>                
             </swiper-slide>
             <swiper-slide>
-                <div class="card-testimonials display-column ">
+                <div class="card-testimonials  ">
                     <img  class="icon-testimonials" src="/images/icon-quote-testimonials.png">
                     <p class="style-p" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat optio ea eligendi omnis possimus expedita in dolore recusandae delectus explicabo nemo, est earum magni illo alias, facilis provident ex natus.</p>
                     <div class="footer-card">
@@ -190,22 +191,26 @@
 
     <!-- section-cta -->
     <section class="section-call-to-action background-full-image">
-        <div class="content-text-cta display-column">
-            <h2 class="text-center">Capturing <span>the moments</span> that captivate <span>your heart</span></h2>
-            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, commodi quae. Asperiores minus nostrum, aliquam consequatur beatae excepturi, vel saepe, perspiciatis ullam iusto molestias in tenetur rerum vero facere dolore.</p>
-            <button class="btn-outline btn--l">Order Now</button>
-        </div> 
+        <article class="centered-cta">
+            <div class="content-text-cta display-column">
+                <h2 class="text-center style-h2">Capturing <span>the moments</span> that captivate <span>your heart</span></h2>
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, commodi quae. Asperiores minus nostrum, aliquam consequatur beatae excepturi, vel saepe, perspiciatis ullam iusto molestias in tenetur rerum vero facere dolore.</p>
+                <div class="content-button-cta">
+                    <button class="btn-outline btn--l">Order Now</button>
+                </div>
+            </div> 
+        </article>
     </section>
 
 
      <!-- footer -->
-     <footer class="display-column"> 
-        <div class="content-description-company display-column">
+     <footer class=""> 
+        <div class="content-description-company ">
             <img class="image-logo-footer" src="../images/logo-vector-full.svg" alt="imagen placeholder">
             <p class="text-caption">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum.</p>                  
         </div>
  
-        <div class="content-contact-info display-column">
+        <div class="content-contact-info ">
             <h5 class="style-h5 text-center">Contact info</h5>
             <ul class="list-footer">
                 <li>
@@ -222,7 +227,7 @@
                 </li>
             </ul>
         </div>
-        <div class="content-other-info display-column">
+        <div class="content-other-info ">
             <h5 class=" style-h5 text-center">Other info</h5>
             <ul class="list-footer">
                 <li>
@@ -239,7 +244,7 @@
                 </li>
             </ul>
         </div>
-        <div class="content-follow display-column">
+        <div class="content-follow ">
             <h5 class="style-h5 text-center">Follow me</h5>
             <ul class="list-social">
                 <li>

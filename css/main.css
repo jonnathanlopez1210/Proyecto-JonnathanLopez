@@ -6,7 +6,7 @@
   background-image: url(../images/img-background-about-me.jpg);
 }
 
-.content-image-hero, .content-image-hero-about {
+.content-image-hero, .content-image-hero-about, .content-image-hero-services, .content-image-hero-portfolio {
   display: none;
 }
 
@@ -149,6 +149,44 @@
   margin: 16px 0;
 }
 
+.section-hero-services {
+  background-image: url(../images/img-background-services.jpg);
+}
+
+.content-cards-pricing {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-default .title-package {
+  color: #0B0C0C;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.card-default .price-package {
+  color: #D2C1AF;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.img-service-card {
+  display: none;
+}
+
+.section-hero-portfolio {
+  background-image: url(../images/img-background-portfolio.jpg);
+}
+
+.content-form-contact {
+  margin-top: 32px;
+}
+
+.group-form {
+  margin-bottom: 18px;
+}
+
 @media only screen and (min-width: 768px) {
   .style-h1 {
     font-size: 86px;
@@ -167,7 +205,7 @@
   section {
     padding: 64PX 40px;
   }
-  .section-hero-home, .section-hero-about {
+  .section-hero-home, .section-hero-about, .section-hero-services, .section-hero-portfolio {
     background-image: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -176,17 +214,17 @@
     height: 700px;
     overflow: hidden;
   }
-  .content-image-hero, .content-image-hero-about {
+  .content-image-hero, .content-image-hero-about, .content-image-hero-services, .content-image-hero-portfolio {
     display: block;
     height: 100%;
     overflow: hidden;
   }
-  .content-image-hero img, .content-image-hero-about img {
+  .content-image-hero img, .content-image-hero-about img, .content-image-hero-services img, .content-image-hero-portfolio img {
     height: 100%;
     object-fit: cover;
   }
   .content-text-hero {
-    padding: 0 64px 0 32px;
+    padding: 0 64px 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -231,6 +269,47 @@
   }
   .content-my-equipments {
     width: 60%;
+    margin: 0 auto 40px;
+  }
+  .content-card-equipments {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+  .card-list-equipments {
+    width: 498px;
+  }
+  .content-card-awards {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .content-card-awards .card-awards {
+    width: 330px;
+  }
+  .content-cards-pricing {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .group-card-service {
+    display: flex;
+  }
+  .group-card-service .card-default,
+  .group-card-service .img-service-card {
+    width: 50%;
+  }
+  .group-card-service .img-service-card {
+    display: block;
+  }
+  .group-card-service .img-service-card img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .double-form {
+    display: flex;
+    width: 100%;
+  }
+  .content-buttom-form {
+    width: 50%;
     margin: 0 auto;
   }
 }
@@ -253,7 +332,7 @@
   }
   .section-gallery {
     height: 1461px;
-    padding: 0 64px;
+    padding: 64px 64px;
   }
   .content-gallery {
     display: grid;
@@ -270,10 +349,42 @@
   .item-gallery-seven {
     grid-row: span 3;
   }
+  .content-group-title {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .section-details-me {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+  }
+  .content-form-contact {
+    margin-top: 0;
+  }
 }
 @media only screen and (min-width: 1200px) {
+  .content-text-hero {
+    padding-left: 64px;
+  }
+  .centered-cta {
+    margin: 0 auto;
+    width: 50%;
+  }
   .content-button-hero {
     width: 30%;
+  }
+  .content-img {
+    width: 100%;
+  }
+  .content-cards-pricing {
+    justify-content: center;
+  }
+  .group-card-service {
+    width: 498px;
+  }
+  .section-details-me {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 * {
@@ -339,6 +450,7 @@ article {
   line-height: 125%;
   text-transform: uppercase;
   color: #fff;
+  word-wrap: break-word;
 }
 .style-h2 {
   font-size: 32px;
@@ -399,6 +511,10 @@ img {
   width: 100%;
 }
 
+.group-form {
+  width: 100%;
+}
+
 .content-form-full,
 .double-form {
   gap: 18px;
@@ -410,6 +526,7 @@ label {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3.2PX;
+  margin-bottom: 4px;
 }
 
 input,

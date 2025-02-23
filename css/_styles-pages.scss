@@ -12,7 +12,9 @@
 
 .content-image {
     &-hero,
-    &-hero-about {
+    &-hero-about, 
+    &-hero-services,
+    &-hero-portfolio {
         display: none;
     }
 }
@@ -171,3 +173,52 @@
     }
 }
 
+// services 
+
+.section-hero-services {
+    background-image: url(../images/img-background-services.jpg
+    );
+}
+
+.content-cards-pricing {
+    @include gap-size (32px)
+}
+
+
+.card-default{
+
+    .title-package {
+        color: $tertiary-color;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .price-package {
+        color: $main-color;
+        font-size: 64px;
+        font-weight: bold;
+    }
+
+    
+}
+
+.img-service-card {
+    display: none;
+}
+
+// portfolio
+
+.section-hero-portfolio {
+    background-image: url(../images/img-background-portfolio.jpg);
+}
+
+//contact
+
+.content-form-contact {
+    margin-top: 32px ;
+}
+
+.group-form {
+    margin-bottom: 18px;
+}

@@ -27,7 +27,9 @@
 
     .section-hero {
        &-home, 
-       &-about {
+       &-about, 
+       &-services,
+       &-portfolio {
             background-image: none;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -40,7 +42,9 @@
 
     .content-image {
         &-hero,
-        &-hero-about {
+        &-hero-about,
+        &-hero-services,
+        &-hero-portfolio {
             display: block;
             height: 100%;
             overflow: hidden;
@@ -54,7 +58,7 @@
 
 
     .content-text-hero {
-        padding: 0 64px 0 32px;
+        padding: 0 64px 0 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -111,8 +115,62 @@
 
     .content-my-equipments {
         width: 60%;
+        margin: 0 auto 40px;
+    }
+
+    .content-card-equipments {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .card-list-equipments {
+        width: 498px;
+    }
+
+    .content-card-awards{
+        flex-direction: row;
+        justify-content: center;
+        
+        .card-awards{
+            width:330px;
+        }
+    }
+
+    .content-cards-pricing {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .group-card-service {
+        display: flex;
+        
+        .card-default,
+        .img-service-card {
+            width: 50%;
+        }
+
+        .img-service-card {
+            display: block;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .double-form {
+        display: flex;
+        width: 100%;
+    }
+
+    .content-buttom-form {
+        width: 50%;
         margin: 0 auto;
     }
+
+    
 }
 
 @media only screen and (min-width: 1024px) {
@@ -138,7 +196,7 @@
 
     .section-gallery {
         height: 1461px;
-        padding: 0 64px;
+        padding: 64px 64px;
     }
 
     .content-gallery {
@@ -159,11 +217,52 @@
         grid-row: span 3;
     }
 
-  
+    .content-group-title {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .section-details-me {
+        display: flex;
+        gap: 48px ;
+        justify-content: center;
+    }
+
+    .content-form-contact {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
+    
+    .content-text-hero {
+        padding-left: 64px;
+    }
+
+    .centered-cta {
+        margin: 0 auto;
+        width: 50%;
+    }
+    
     .content-button-hero {
         width: 30%;
     }
+
+    .content-img{
+        width: 100%;
+    }
+
+    .content-cards-pricing {
+        justify-content: center;
+    }
+
+    .group-card-service {
+        width: 498px;
+    }
+
+    .section-details-me {
+        width: 80%;
+        margin: 0 auto;
+    }
+
 }
