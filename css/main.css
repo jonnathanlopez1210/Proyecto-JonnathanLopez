@@ -1,11 +1,12 @@
-.section-hero-banner {
+.section-hero-home {
   background-image: url(../images/img-photo-jonnathan.png);
 }
 
-.content-image-hero {
-  background-image: url(../images/img-photo-jonnathan.png);
-  background-position: center;
-  height: 100%;
+.section-hero-about {
+  background-image: url(../images/img-background-about-me.jpg);
+}
+
+.content-image-hero, .content-image-hero-about {
   display: none;
 }
 
@@ -20,7 +21,7 @@
   gap: 20px;
 }
 
-.card-services {
+.card-default {
   background-color: #191B1D;
   padding: 32px 20px;
   gap: 24px;
@@ -88,6 +89,66 @@
   padding: 0;
 }
 
+.section-showroom-photos {
+  padding: 64px 0;
+}
+
+.content-card-awards {
+  gap: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-awards {
+  padding: 32px 20px;
+  border: 1px solid #D2C1AF;
+  position: relative;
+}
+.card-awards .icon-awards {
+  background-color: #0B0C0C;
+  height: 48px;
+  width: 116px;
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+}
+.card-awards .award {
+  background-image: url(../images/award-solid.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card-awards .exhibitions {
+  background-image: url(../images/panorama-solid.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card-awards .projects {
+  background-image: url(../images/camera-retro-solid.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card-awards .number-card-award {
+  color: #D2C1AF;
+  font-size: 86px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  line-height: 86px;
+}
+.card-awards .title-card-award {
+  color: #F5F8FF;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+.card-awards .divider-awards {
+  margin: 16px 0;
+}
+
 @media only screen and (min-width: 768px) {
   .style-h1 {
     font-size: 86px;
@@ -106,19 +167,31 @@
   section {
     padding: 64PX 40px;
   }
-  .section-hero-banner {
+  .section-hero-home, .section-hero-about {
     background-image: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
-    align-items: center;
-    height: 100vh;
+    align-items: stretch;
+    height: 700px;
+    overflow: hidden;
   }
-  .content-image-hero {
-    display: inline-block;
+  .content-image-hero, .content-image-hero-about {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+  }
+  .content-image-hero img, .content-image-hero-about img {
+    height: 100%;
+    object-fit: cover;
   }
   .content-text-hero {
     padding: 0 64px 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
   }
   .centered-cta {
     width: 60%;
@@ -148,6 +221,17 @@
   .content-contact-info .list-footer,
   .content-other-info .list-footer {
     padding-left: 0;
+  }
+  .section-showroom-photos {
+    padding: 0;
+  }
+  .content-showroom-photos {
+    display: flex;
+    flex-direction: row;
+  }
+  .content-my-equipments {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -406,7 +490,7 @@ button {
   padding: 0% !important;
 }
 .btn-text:hover {
-  color: var(--secondary-color);
+  color: #fff;
   gap: 12px;
 }
 .btn--xl {

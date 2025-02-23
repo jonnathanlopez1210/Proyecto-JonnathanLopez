@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" /> 
     
     <!-- BOOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
     <!-- header -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/index.html">
                 <img src="/images/logo-vector-full.svg" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="/pages/about-me.html">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/pages/services.html">Services</a></li>
+                    <li class="nav-i tem"><a class="nav-link" href="/pages/services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="/pages/portfolio.html">Portfolio</a></li>
                 </ul>
                 <a href="/pages/contact-us.html">
@@ -38,10 +38,11 @@
             </div>
         </div>
     </nav>
-    
+     
     <!-- seccion 1 hero -->
-    <section class="section-hero-banner background-full-image"> 
+    <section class="section-hero-home background-full-image"> 
         <div class="content-image-hero">
+            <img src="/images/img-photo-jonnathan.png" alt="imagen placeholder">
         </div>
         <div class="content-text-hero display-column">
             <h1 class="style-h1" >Hello! </br> I’M <span>Jonnathan</span> Lopez</h1>
@@ -60,7 +61,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod omnis laborum error vitae nihil, illo rem eligendi quas quasi deserunt sapiente laudantium facilis esse facere. Voluptas consequuntur maxime omnis.</p>
             </div>
             <div class="content-cards-services display-column">
-                <div class="card-services display-column">
+                <div class="card-default display-column">
                     <img class="icon-services" src="/images/icon-services-Product.png" alt="">
                     <div class="body-card display-column">
                         <h3 class="style-h3"> <span>Lorem</span> ipsum</h3>
@@ -71,7 +72,7 @@
                         <i class="icon-button"></i>
                     </button>
                 </div>
-                <div class="card-services display-column">
+                <div class="card-default display-column">
                     <img class="icon-services" src="/images/icon-services-Studio.png" alt="">
                     <div class="body-card display-column">
                         <h3 class="style-h3"> <span>Lorem</span> ipsum</h3>
@@ -82,7 +83,7 @@
                         <i class="icon-button"></i>
                     </button>
                 </div>
-                <div class="card-services display-column">
+                <div class="card-default display-column">
                     <img class="icon-services" src="/images/icon-services-Video.png" alt="">
                     <div class="body-card display-column">
                         <h3 class="style-h3"> <span>Lorem</span> ipsum</h3>
@@ -93,7 +94,7 @@
                         <i class="icon-button"></i>
                     </button>
                 </div>
-                <div class="card-services display-column">
+                <div class="card-default display-column">
                     <img class="icon-services" src="/images/icon-services-Wedding.png" alt="">
                     <div class="body-card display-column">
                         <h3 class="style-h3"> <span>Lorem</span> ipsum</h3>
@@ -109,7 +110,7 @@
     </section>
 
     <!-- seccion 3 gallery  -->
-    <section class="section-gallery">
+    <section class="section-gallery" style="display: none;">
         <div class="content-gallery">
             <div class="item-gallery-one">
                 <img src="./images/Gallery/img-placeholder-1.png" alt="imagen placeholder">
@@ -145,7 +146,7 @@
     <section class="section-testimonials display-column ">
        <article>
         <div class="content-text-section">
-            <h2 class="text-center style-h2 ">What <span>My Clients</span> Say</h2>
+            <h2 class="style-h2 text-center">What <span>My Clients</span> Say</h2>
         </div>
         <swiper-container class="mySwiper" navigation="false" pagination="false" keyboard="true" mousewheel="true"
         css-mode="true">

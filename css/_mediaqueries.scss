@@ -25,21 +25,41 @@
         padding: 64PX 40px;
     }
 
-    .section-hero-banner {
-        background-image: none;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0;
-        align-items: center;
-        height: 100vh;
+    .section-hero {
+       &-home, 
+       &-about {
+            background-image: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0;
+            align-items: stretch;
+            height: 700px;
+            overflow: hidden;
+       }
     }
 
-    .content-image-hero {
-        display: inline-block;
+    .content-image {
+        &-hero,
+        &-hero-about {
+            display: block;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
+
 
     .content-text-hero {
         padding: 0 64px 0 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        overflow: hidden;
     }
 
     .centered-cta {
@@ -78,6 +98,20 @@
     .content-contact-info .list-footer,
     .content-other-info .list-footer {
         padding-left: 0;
+    }
+
+    .section-showroom-photos {
+        padding: 0;
+    }
+
+    .content-showroom-photos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-my-equipments {
+        width: 60%;
+        margin: 0 auto;
     }
 }
 

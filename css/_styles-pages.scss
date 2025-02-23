@@ -1,14 +1,20 @@
 @use "variables" as *;
+@use "mixins" as *;
 
-.section-hero-banner {
+.section-hero-home {
     background-image: url(../images/img-photo-jonnathan.png);
 }
 
-.content-image-hero {
-    background-image: url(../images/img-photo-jonnathan.png);
-    background-position: center;
-    height: 100%;
-    display: none;
+.section-hero-about {
+    background-image: url(../images/img-background-about-me.jpg
+    );
+}
+
+.content-image {
+    &-hero,
+    &-hero-about {
+        display: none;
+    }
 }
 
 .content-text-hero,
@@ -22,7 +28,7 @@
     gap: 20px;
 }
 
-.card-services {
+.card-default {
     background-color: $accent-color;
     padding: 32px 20px;
     gap: 24px;
@@ -83,7 +89,6 @@
 }
 
 //ABOUT ME 
-
 .content-signature {
     width: 196px;
     height: 61px;
@@ -100,3 +105,69 @@
     gap: 12px;
     padding: 0;
 }
+
+.section-showroom-photos {
+    padding: 64px 0;
+}
+
+.content-card-awards {
+    @include gap-size (64px);
+}
+
+.card-awards {
+    padding: 32px 20px;
+    border: 1px solid $main-color;
+    position: relative; 
+
+    .icon-awards {
+        background-color: $tertiary-color;
+        height: 48px;
+        width: 116px;
+        position: absolute;
+        top: -26px; 
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: block;
+    }
+
+    .award {
+        background-image: url(../images/award-solid.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+
+    .exhibitions{
+        background-image: url(../images/panorama-solid.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .projects {
+        background-image: url(../images/camera-retro-solid.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .number-card-award {
+        color: $main-color;
+        font-size: 86px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        line-height: 86px;
+    }
+    
+    .title-card-award {
+        color: $text-color;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .divider-awards{
+        margin: 16px 0;
+    }
+}
+

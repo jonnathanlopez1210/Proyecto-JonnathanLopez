@@ -228,7 +228,7 @@ button {
         padding: 0% !important;
 
         &:hover {
-            color: var(--secondary-color);
+            color:$secondary-color;
             gap: 12px;
         }
     }
